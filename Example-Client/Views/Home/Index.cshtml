@@ -1,0 +1,20 @@
+﻿@using Example_Client.Models
+@model List<Product>
+    <div class="container">
+    <div class="jumbotron">
+        <h3>Choose product</h3>
+    </div>
+    @using(Html.BeginForm("Detail","Home","FormMethod.Post"))
+    {
+        @foreach(var product in Model)
+        {
+            <div class="radio">
+                <label for="female" style="width : 125px">
+                    <input type="radio" name="ID" id="ID" value="@product.ID">@product.Name                                        
+                </label>
+                <b>Fiyat</b> : <label>@product.Value ₺</label>
+            </div>            
+        }
+        <br>
+        <input type="submit" value="Buy" class="btn btn-success">
+    }

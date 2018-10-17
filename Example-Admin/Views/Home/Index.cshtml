@@ -1,0 +1,30 @@
+﻿
+@model List<Product>
+    <script>
+        function setValue(selectedOption){
+            var price=selectedOption.getAttribute('price');   
+            document.getElementById("Value").value=price;    
+
+            var productID=selectedOption.id;   
+            document.getElementById("ID").value=productID;      
+        }
+    </script>
+<div class="container">
+    <div class="jumbotron">
+        <h3> Update item's price </h3>
+    </div>
+    <hr>
+    @using(Html.BeginForm("Push","Home","FormMethod.Post"))
+    {
+        <label> Product Type: </label>
+        <select name="Name" id="Name" onchange="setValue(this.options[this.selectedIndex])">
+            @foreach(var product in Model)
+            {
+                <option value="@product.Name" id="@product.ID" price="@product.Value">@product.Name</option>            
+            }
+        </select>                                             
+                <input type="text" name="Value" id="Value">
+                <input type="hidden" name= "ID" id="ID">                                     
+        <input type="submit" value="Update" class="btn btn-success">
+    }
+</div>

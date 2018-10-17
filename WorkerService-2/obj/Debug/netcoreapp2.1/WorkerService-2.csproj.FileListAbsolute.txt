@@ -1,0 +1,11 @@
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\bin\Debug\netcoreapp2.1\WorkerService-2.deps.json
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\bin\Debug\netcoreapp2.1\WorkerService-2.runtimeconfig.json
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\bin\Debug\netcoreapp2.1\WorkerService-2.runtimeconfig.dev.json
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\bin\Debug\netcoreapp2.1\WorkerService-2.dll
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\bin\Debug\netcoreapp2.1\WorkerService-2.pdb
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\obj\Debug\netcoreapp2.1\WorkerService-2.csprojAssemblyReference.cache
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\obj\Debug\netcoreapp2.1\WorkerService-2.csproj.CoreCompileInputs.cache
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\obj\Debug\netcoreapp2.1\WorkerService-2.AssemblyInfoInputs.cache
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\obj\Debug\netcoreapp2.1\WorkerService-2.AssemblyInfo.cs
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\obj\Debug\netcoreapp2.1\WorkerService-2.dll
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\WorkerService-2\obj\Debug\netcoreapp2.1\WorkerService-2.pdb

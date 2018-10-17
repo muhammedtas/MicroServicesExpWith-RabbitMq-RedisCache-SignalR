@@ -1,0 +1,14 @@
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\bin\Debug\netcoreapp2.1\Example-Hubs.deps.json
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\bin\Debug\netcoreapp2.1\Example-Hubs.runtimeconfig.json
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\bin\Debug\netcoreapp2.1\Example-Hubs.runtimeconfig.dev.json
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\bin\Debug\netcoreapp2.1\Example-Hubs.dll
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\bin\Debug\netcoreapp2.1\Example-Hubs.pdb
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.csprojAssemblyReference.cache
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.csproj.CoreCompileInputs.cache
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.RazorAssemblyInfo.cache
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.RazorAssemblyInfo.cs
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.AssemblyInfoInputs.cache
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.AssemblyInfo.cs
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.RazorTargetAssemblyInfo.cache
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.dll
+C:\CoreDeployment\RabbbitMq-RedisCache-SignalR-Example\Example-Hubs\obj\Debug\netcoreapp2.1\Example-Hubs.pdb
