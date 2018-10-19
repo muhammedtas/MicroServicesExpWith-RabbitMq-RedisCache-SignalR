@@ -57,7 +57,7 @@ namespace Example_Hubs
 
             app.UseSignalR(routes =>
             {
-                routes.MapHub<CustomHub>("*/producthub");
+                routes.MapHub<CustomHub>("/producthub");
             });
         }
     }

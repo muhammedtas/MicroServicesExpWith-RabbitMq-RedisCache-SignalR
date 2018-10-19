@@ -1,12 +1,15 @@
 @using Example_Client.Models
 @model Product
 <head>
-     <script src="~/scripts/signalr-client-1.0.0-alpha2-final.min.js"></script>
+     <script src="~/lib/signalr/signalr.js"></script>
      <script>
-        let connection = new signalR.HubConnection('/producthub');
+        // let connection = new signalR.HubConnection('/producthub');
+        const connection = new signalR.HubConnectionBuilder()
+        .withUrl('/producthub').build(); // http://localhost:4000/producthub
+
          
          connection.on('SetConnectionId', data => {
-                console.log("ConnectionID : "+data);
+                console.log("ConnectionId : "+data);
                 var result=connection.invoke('ConnectGroup','@Model.Name',data);
                 console.log(result);
 
@@ -17,8 +20,10 @@
                alert("New Price : "+data.value +" ₺");
                document.getElementById("productValue").innerHTML=data.value;
         });
+        
+        connection.start().catch(err => console.error(err.toString()));
 
-        connection.start()
+        // connection.start()
      </script>    
 </head>
  <div class="container">

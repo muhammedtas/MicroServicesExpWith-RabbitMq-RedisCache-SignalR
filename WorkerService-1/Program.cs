@@ -58,11 +58,11 @@ namespace WorkerService_1
             .WithUrl("http://localhost:4000/producthub")
             .Build();
 
-            hubconnection.Closed += async (error) =>
-            {
-                await Task.Delay(new Random().Next(0,5) * 1000);
-                await hubconnection.StartAsync();
-            };
+            // hubconnection.Closed += async (error) =>
+            // {
+            //     await Task.Delay(new Random().Next(0,5) * 1000);
+            //     await hubconnection.StartAsync();
+            // };
 
             await hubconnection.StartAsync();
         }

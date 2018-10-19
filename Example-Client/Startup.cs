@@ -32,14 +32,14 @@ namespace RabbitMq_Client
             //     options.MinimumSameSitePolicy = SameSiteMode.None;
             // });
 
-            services.AddCors(options => options.AddPolicy("CorsPolicy", builder =>
-            {
-                builder
-                    .AllowAnyMethod()
-                    .AllowAnyHeader()
-                    .AllowAnyOrigin()
-                    .AllowCredentials();
-            }));
+            // services.AddCors(options => options.AddPolicy("CorsPolicy", builder =>
+            // {
+            //     builder
+            //         .AllowAnyMethod()
+            //         .AllowAnyHeader()
+            //         .AllowAnyOrigin()
+            //         .AllowCredentials();
+            // }));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSignalR();
 
@@ -61,12 +61,11 @@ namespace RabbitMq_Client
             // app.UseHttpsRedirection();
             app.UseStaticFiles();
             // app.UseCookiePolicy();
-            app.UseCors("CorsPolicy");
-
-            app.UseSignalR(routes =>
-          {
-              routes.MapHub<ProductHub>("/producthub");
-          });
+            // app.UseCors("CorsPolicy");
+              app.UseSignalR(routes =>
+            {
+                routes.MapHub<ProductHub>("/producthub");
+            });
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

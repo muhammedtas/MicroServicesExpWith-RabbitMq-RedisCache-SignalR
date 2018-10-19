@@ -6,6 +6,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <!-- <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.4" /> -->
   </ItemGroup>
+<!-- 
+   <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+    <Folder Include="wwwroot\scripts\" />
+  </ItemGroup> -->
 
 </Project>

@@ -5,8 +5,8 @@
             var price=selectedOption.getAttribute('price');   
             document.getElementById("Value").value=price;    
 
-            var productID=selectedOption.id;   
-            document.getElementById("ID").value=productID;      
+            var productId=selectedOption.id;   
+            document.getElementById("Id").value=productId;      
         }
     </script>
 <div class="container">
@@ -20,11 +20,11 @@
         <select name="Name" id="Name" onchange="setValue(this.options[this.selectedIndex])">
             @foreach(var product in Model)
             {
-                <option value="@product.Name" id="@product.ID" price="@product.Value">@product.Name</option>            
+                <option value="@product.Name" id="@product.Id" price="@product.Value">@product.Name</option>            
             }
         </select>                                             
                 <input type="text" name="Value" id="Value">
-                <input type="hidden" name= "ID" id="ID">                                     
+                <input type="hidden" name= "Id" id="Id">                                     
         <input type="submit" value="Update" class="btn btn-success">
     }
 </div>

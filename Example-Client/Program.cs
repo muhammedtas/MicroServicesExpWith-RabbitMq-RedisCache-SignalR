@@ -19,6 +19,8 @@ namespace RabbitMq_Client
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+            // .UseKestrel()
+            // .UseContentRoot(Directory.GetCurrentDirectory())
             .UseUrls("http://localhost:4000")
             .UseStartup<Startup>();
     }

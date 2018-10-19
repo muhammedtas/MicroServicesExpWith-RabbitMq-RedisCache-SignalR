@@ -11,9 +11,9 @@ namespace Example_Admin.Controllers
     public class HomeController : Controller
     {
         public static List<Product> productList=new List<Product>(){
-                new Product(){ID=1,Name="Computer",Value=Convert.ToDecimal("5000.50")},
-                new Product(){ID=2,Name="Phone",Value=Convert.ToDecimal("3999.99")},
-                new Product(){ID=3,Name="Television",Value=Convert.ToDecimal("2000.10")}
+                new Product(){Id=1,Name="Computer",Value=Convert.ToDecimal("5000.50")},
+                new Product(){Id=2,Name="Phone",Value=Convert.ToDecimal("3999.99")},
+                new Product(){Id=3,Name="Television",Value=Convert.ToDecimal("2000.10")}
             };      
         public IActionResult Index()
         {

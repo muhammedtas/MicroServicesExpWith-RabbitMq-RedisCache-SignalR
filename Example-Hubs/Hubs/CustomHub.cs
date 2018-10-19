@@ -11,10 +11,10 @@ namespace Example_Hubs.Hubs
     public class CustomHub : Hub
     {
 
-        public async Task<string> ConnectGroup(string productName, string connectionID)
+        public async Task<string> ConnectGroup(string productName, string connectionId)
         {
-            await Groups.AddToGroupAsync(connectionID, productName);
-            return $"{connectionID} is added {productName}";
+            await Groups.AddToGroupAsync(connectionId, productName);
+            return $"{connectionId} is added {productName}";
         }
         public Task PushNotify(Product productData)
         {

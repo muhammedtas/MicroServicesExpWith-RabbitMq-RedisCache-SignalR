@@ -14,9 +14,9 @@ namespace RabbitMq_Client.Controllers
     public class HomeController : Controller
     {
         public static List<Product> productList = new List<Product>(){
-        new Product(){ID=1,Name="Computer",Value=Decimal.Parse("5000.50")},
-        new Product(){ID=2,Name="Phone",Value=Decimal.Parse("3999.99")},
-        new Product(){ID=3,Name="Television",Value=Decimal.Parse("2000.10")}
+        new Product(){Id=1,Name="Computer",Value=Decimal.Parse("5000.50")},
+        new Product(){Id=2,Name="Phone",Value=Decimal.Parse("3999.99")},
+        new Product(){Id=3,Name="Television",Value=Decimal.Parse("2000.10")}
         };
         public IActionResult Index()
         {
@@ -47,9 +47,9 @@ namespace RabbitMq_Client.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
         [HttpPost]
-        public IActionResult Detail(int ID)
+        public IActionResult Detail(int id)
         {
-            Product product=productList.FirstOrDefault(s=>s.ID==ID);
+            Product product=productList.FirstOrDefault(p=>p.Id==id);
             return View(product);
         }
     }
@@ -59,10 +59,10 @@ namespace RabbitMq_Client.Controllers
         {
             return Clients.Client(Context.ConnectionId).SendAsync("SetConnectionId", Context.ConnectionId);
         }
-        public async Task<string> ConnectGroup(string productName,string connectionID)
+        public async Task<string> ConnectGroup(string productName,string connectionId)
         {
-            await Groups.AddToGroupAsync(connectionID,productName);
-            return $"{connectionID} is added {productName}";
+            await Groups.AddToGroupAsync(connectionId,productName);
+            return $"{connectionId} is added {productName}";
         }        
         public Task PushNotify(Product productData)
         {
